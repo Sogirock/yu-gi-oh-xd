@@ -3,9 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <title>Yu-Gi-Oh XD - Mon Jeu</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Bienvenue sur Yu-Gi-Oh XD !</h1>
-  <p>Le jeu va arriver bientôt...</p>
+  <h1>🎴 Yu-Gi-Oh XD !</h1>
+
+  <nav>
+    <button onclick="showPage('shop')">🛒 Shop</button>
+    <button onclick="showPage('deck')">🃏 Deck</button>
+    <button onclick="showPage('combat')">⚔️ Combat</button>
+  </nav>
+
+  <section id="shop" class="page">Le shop sera ici</section>
+
+  <section id="deck" class="page hidden">
+    <h2>🃏 Deck Builder</h2>
+    <div id="deck-builder">
+      <div>
+        <h3>Cartes disponibles</h3>
+        <div id="available-cards" class="card-grid"></div>
+      </div>
+      <div>
+        <h3>Ton Deck (max 40 cartes)</h3>
+        <div id="player-deck" class="card-grid"></div>
+        <p id="deck-count">0 / 40 cartes</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="combat" class="page hidden">
+    <p>Le plateau de combat sera ici.</p>
+  </section>
+
+  <script type="module" src="main.js"></script>
 </body>
 </html>
