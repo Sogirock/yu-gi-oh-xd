@@ -1,45 +1,75 @@
+/* Fond simple et police classe */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Georgia', serif;
+  background-color: #111; /* fond noir profond */
   padding: 20px;
-
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre tout horizontalement */
+  align-items: center;
+  color: white;
 }
 
+/* Titre doré stylé */
 #main-title {
-  font-size: 3em;
-  color: #ffcc00;
-  text-shadow: 2px 2px #000;
+  font-size: 4em;
+  color: gold;
+  text-shadow: 3px 3px 5px black;
   font-family: 'Impact', 'Arial Black', sans-serif;
   margin-bottom: 30px;
+  border-bottom: 3px solid gold;
+  padding-bottom: 10px;
 }
 
+/* Menu principal */
 #main-menu {
   display: flex;
-  gap: 15px; /* Espace entre les boutons */
+  gap: 15px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* Boutons du menu */
 #main-menu button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-weight: bold;
+  font-size: 1.1em;
+  border: 2px solid gold;
+  background: rgba(0, 0, 0, 0.85);
+  color: gold;
+  text-shadow: 1px 1px 3px black;
+  border-radius: 10px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+#main-menu button:hover {
+  background: rgba(50, 0, 0, 0.9);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
+/* Contenu des pages */
 .page {
-  background: rgb(10, 2, 2);
-  border: 1px solid #0b0303;
+  background: rgba(20, 20, 20, 0.9);
+  border: 2px solid goldenrod;
   color: white;
-  min-height: 150px;
-  width: 400px;  /* Largeur fixe pour le contenu */
-  padding: 20px;
+  min-height: 200px;
+  width: 500px;
+  padding: 30px;
   text-align: center;
   box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 0 15px black;
+  transition: transform 0.3s ease;
 }
 
+.page:not(.hidden):hover {
+  transform: scale(1.02);
+}
+
+/* Masquer les pages inactives */
 .hidden {
   display: none;
 }
+
 
