@@ -10,15 +10,15 @@ body {
 
 #main-menu button {
   padding: 10px 15px;
-  margin-right: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
   font-weight: bold;
     }
 
 .page {
   padding: 15px;
-  background: white;
-  border: 1px solid #ccc;
+  background: rgb(10, 2, 2);
+  border: 1px solid #0b0303;
   min-height: 150px;
 }
 
