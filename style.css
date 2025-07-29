@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #fffdfd;
 }
 
 #main-menu {
@@ -17,8 +17,8 @@ body {
 
 .page {
   padding: 15px;
-  background: rgb(10, 2, 2);
-  border: 1px solid #0b0303;
+  background: rgb(247, 245, 245);
+  border: 1px solid #eae4e4;
   min-height: 150px;
 }
 
@@ -33,6 +33,5 @@ body {
   color: #ffcc00;
   text-shadow: 2px 2px #000;
   font-family: 'Impact', 'Arial Black', sans-serif;
-}
-
+}; 
 
