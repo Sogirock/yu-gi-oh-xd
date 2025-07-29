@@ -1,3 +1,5 @@
+import { cards } from "./data/cards.js";
+
 document.querySelectorAll("#main-menu button").forEach(button => {
   button.addEventListener("click", () => {
     const pageId = button.dataset.page;
