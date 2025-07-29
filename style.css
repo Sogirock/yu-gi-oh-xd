@@ -71,5 +71,24 @@ body {
 .hidden {
   display: none;
 }
+.carte {
+  border: 2px solid gold;
+  background: #1a1a1a;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  color: white;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+}
+
+.carte img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+};
+
 
 
